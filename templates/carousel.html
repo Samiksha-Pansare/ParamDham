@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+    <title>Try</title>
+  </head>
+  <style>
+    #carouselExampleControls{
+      width: 80%;
+    }
+    .carousel-inner {
+      padding: 2rem;
+      padding-right: 5rem;
+      padding-left: 5rem;
+      background-color: rgb(0, 0, 0,0.2) !important;    
+      backdrop-filter: blur(4px) !important;
+      border-radius: 25px;
+    }
+    .card {
+      margin: 0 0.5em;
+      /* box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18); */
+      border: none;
+      width: 185px !important;
+      background: transparent;
+      color: #fff;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      background-color: #e1e1e1;
+      width: 6vh;
+      height: 6vh;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .card-img-top{
+    width: 185px;
+    height: 225px;
+    box-shadow: 0px 3px 99px rgb(255, 255, 255);
+    border-radius: 25px;
+    }
+    .add-to-cart-btn{
+      background-color: rgb(0, 0, 0,0.2) !important;    
+      backdrop-filter: blur(4px) !important;
+      width:max-content;
+      box-shadow: 0px 3px 99px rgb(255, 255, 255);
+      border-radius: 21.5px 21.5px 0px 21.5px !important;
+      color: #ffffff !important;
+      border-color: rgba(37,252,244,1) !important;
+      border-width: 5px !important;
+
+    }
+    .product-name{
+      font-size: 16px;
+    }
+    .product-price {
+      font-size: 24px;
+      color: rgba(37,252,244,1) !important;
+    }
+    @media (min-width: 768px) {
+      .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+        align-content: center;
+      }
+      .carousel-inner {
+        display: flex;
+      }
+    }
+    .card .img-wrapper {
+        max-width: 100%;
+        height: 13em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card img {
+        max-height: 100%;
+    }
+    @media (max-width: 767px) {
+      .card .img-wrapper {
+        height: 17em;
+      }
+    }
+  </style>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <div class="nav-logo">
+    
+            </div>
+         
+        </a>
+      
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse align-items-center" id="navbarSupportedContent">
+          <ul class="nav-menu navbar-nav ml-auto align-items-center">
+            <li class="nav-menu-item nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-menu-item nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-menu-item nav-item">
+              <a class="nav-link" href="#">Videos</a>
+            </li>
+            <li class="nav-menu-item nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-menu-item nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-menu-item nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-menu-item nav-item">
+              <a class="nav-link" href="#">Donation</a>
+            </li>
+            <li class="nav-menu-item nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width: 18rem;">
+                <img src="../static/assets/product.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title product-name">Patanjali Dantkanti Toothpaste</h5>
+                  <p class="card-text product-price">Rs. 190/-</p>
+                  <button class="add-to-cart-btn btn">Add to cart</button>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="../static/assets/product.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title product-name">Patanjali Dantkanti Toothpaste</h5>
+                <p class="card-text product-price">Rs. 190/-</p>
+                <button class="add-to-cart-btn btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="../static/assets/product.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title product-name">Patanjali Dantkanti Toothpaste</h5>
+                <p class="card-text product-price">Rs. 190/-</p>
+                <button class="add-to-cart-btn btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="../static/assets/product.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title product-name">Patanjali Dantkanti Toothpaste</h5>
+                <p class="card-text product-price">Rs. 190/-</p>
+                <button class="add-to-cart-btn btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="../static/assets/product.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title product-name">Patanjali Dantkanti Toothpaste</h5>
+                <p class="card-text product-price">Rs. 190/-</p>
+                <button class="add-to-cart-btn btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="../static/assets/product.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title product-name">Patanjali Dantkanti Toothpaste</h5>
+                <p class="card-text product-price">Rs. 190/-</p>
+                <button class="add-to-cart-btn btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card" style="width: 18rem;">
+              <img src="../static/assets/product.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title product-name">Patanjali Dantkanti Toothpaste</h5>
+                <p class="card-text product-price">Rs. 190/-</p>
+                <button class="add-to-cart-btn btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script> -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        var multipleCardCarousel = document.querySelector(
+        "#carouselExampleControls"
+        );
+        if (window.matchMedia("(min-width: 768px)").matches) {
+        var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+            interval: false,
+        });
+        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var cardWidth = $(".carousel-item").width();
+        var scrollPosition = 0;
+        $("#carouselExampleControls .carousel-control-next").on("click", function () {
+            if (scrollPosition < carouselWidth - cardWidth * 4) {
+            scrollPosition += cardWidth;
+            $("#carouselExampleControls .carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                600
+            );
+            }
+        });
+        $("#carouselExampleControls .carousel-control-prev").on("click", function () {
+            if (scrollPosition > 0) {
+            scrollPosition -= cardWidth;
+            $("#carouselExampleControls .carousel-inner").animate(
+                { scrollLeft: scrollPosition },
+                600
+            );
+            }
+        });
+        } else {
+        $(multipleCardCarousel).addClass("slide");
+        }
+    </script>
+  </body>
+  
+</html>
